@@ -9,6 +9,7 @@ class studentmodel extends Controller
 {
     //
     function getStudentdata(){
-        return student::all();
+        $mydata = student::all();
+        return view('studentinfo',['ourdata'=>$mydata]);
     }
 }
