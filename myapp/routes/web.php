@@ -7,6 +7,7 @@ use App\Http\Controllers\checktemplate;
 use App\Http\Controllers\studentcontroller;
 use App\Http\Controllers\userformcontroller;
 use App\Http\Controllers\studentmodel;
+use App\Http\Controllers\aditcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,7 @@ Route::get('studentmodeldata',[studentmodel::class,'getStudentdata']);
 Route::view("login",'loginform');
 Route::view("success",'success');
 Route::post('login',[userformcontroller::class,'savedata']);
+Route::post('aditdata',[aditcontroller::class,'storeAditData']);
+Route::get('aditdata',function(){
+    return view('aditform');
+});

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\login;
+use Illuminate\Http\Request;
+
 
 class userformcontroller extends Controller
 {
